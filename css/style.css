@@ -28,17 +28,20 @@ body {
     flex-direction: column;
     padding-left: 25%;
     justify-content: center;
+    box-shadow: 12px 0 #c8d3f1, 24px 0 #d6def3, 36px 0 #e6e7f5;
 }
 
 .navigation div {
     padding: 10px 20px;
-    max-width: 150px;
+    max-width: 230px;
     transition: background 0.2s ease-in-out;
     letter-spacing: 3px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 .navigation div:hover {
     background: #274472;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 .navigation div {
@@ -47,6 +50,7 @@ body {
 }
 .navigation div img {
     width: 30px;
+    margin-right: 10px;
 }
 .main {
     grid-area: main;
@@ -59,7 +63,7 @@ body {
     height: 300px;
     border-radius: 50%;
     margin-right: 40px;
-    box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+    box-shadow: 12px 0 #c8d3f1, 24px 0 #d6def3, 36px 0 #e6e7f5;
 }
 .main .introduction {
     max-width: 300px;
