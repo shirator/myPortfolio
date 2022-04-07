@@ -24,33 +24,35 @@ body {
 .navigation {
     grid-area: aside;
     background: #41729f;
-}
-.navigation ul {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 25%;
     justify-content: center;
 }
-.navigation ul li {
+
+.navigation div {
     padding: 10px 20px;
+    max-width: 150px;
     transition: background 0.2s ease-in-out;
     letter-spacing: 3px;
 }
-.navigation ul li:hover {
+.navigation div:hover {
     background: #274472;
     font-size: 1.1rem;
     cursor: pointer;
 }
-
+.navigation div {
+    display: flex;
+    align-items: center;
+}
+.navigation div img {
+    width: 30px;
+}
 .main {
     grid-area: main;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.main .introduction {
-
 }
 .main .main-img {
     width: 300px;
@@ -60,7 +62,7 @@ body {
     box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
 }
 .main .introduction {
-    max-width: 200px;
+    max-width: 300px;
 }
 .main .introduction h2:first-child {
     font-size: 0.9rem;
@@ -70,6 +72,10 @@ body {
 .main .introduction .text {
     width: 300px;
     margin-bottom: 20px;
+}
+.main .introduction img {
+    width: 30px;
+    transition: width 0.2s ease-in-out;
 }
 .main .introduction h1 {
     color: #41729f;
