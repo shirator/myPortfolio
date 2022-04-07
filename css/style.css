@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(27, 27, 27);
+}
+
+body {
+    height: 100vh;
+    background: rgb(243, 240, 240);
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+        "aside main"    
+    ;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh;
+}
+
+.navigation {
+    grid-area: aside;
+    background: #41729f;
+}
+.navigation ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation ul li {
+    padding: 10px 20px;
+    transition: background 0.2s ease-in-out;
+    letter-spacing: 3px;
+}
+.navigation ul li:hover {
+    background: #274472;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .introduction {
+
+}
+.main .main-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 40px;
+    box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+}
+.main .introduction {
+    max-width: 200px;
+}
+.main .introduction h2:first-child {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main .introduction .text {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.main .introduction h1 {
+    color: #41729f;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.main .introduction strong {
+    color: #41729f;
+}
+.main .introduction ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.main .introduction ul li {
+    padding: 10px;
+}
